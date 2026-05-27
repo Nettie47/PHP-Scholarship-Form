@@ -1,0 +1,94 @@
+<!-- Chapter 4 exercise 
+Author: Nanette DeHoyos
+Date: 05/19/2026 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scholarship Form</title>
+	<link rel="stylesheet" href="scholarship2styles.css">
+</head>
+<body>
+<div class="container">
+
+	<h2>Scholarship Form</h2>
+	<form name="scholarship" action="process_scholarship.php" method="post">
+		<label for="first">First Name:</label>
+		<br/>
+		<input type="text" name="fName" id="first" autofocus required />
+		<br/>
+		<br/>
+		<label for="last">Last Name:</label>
+		<br/>
+		<input type="text" name="lName" id="last" required />
+		<br/>
+		<br/>
+		<label for="email">Email:</label>
+		<br/>
+		<br/>
+		<input type="email" name="user_email" id="email" required />
+		<br/>
+		<br/>
+		<label for="phone">Phone Number:</label>
+		<br/>
+		<br/>	
+		<input type="tel" name="phone" id="phone" required />
+		<br/>
+		<br/>
+		
+		<label for="major">Select Major:</label>
+
+		<select name="major" id="major" required>
+
+		    <option value="Computer Science">
+		        Computer Science
+		    </option>
+
+		    <option value="Business">
+		        Business
+		    </option>
+
+		    <option value="Education">
+		        Education
+		    </option>
+
+		</select>
+		
+		<br/>
+		<br/>
+	
+	<div class="radio-group">
+
+	    <p>Student Status:</p>
+
+	    <input type="radio" name="status" id="fulltime" value="Full-Time" required>
+
+	    <label for="fulltime">Full-Time</label>
+
+	    <input type="radio" name="status" id="parttime" value="Part-Time" required>
+
+	    <label for="parttime">Part-Time</label>
+
+	</div>
+		<br/>
+		<br/>
+
+		<label for="essay">Why do you deserve this scholarship?</label>
+		<br/>
+
+		<textarea name="essay" id="essay"required></textarea>
+		<br/>
+		<br/>
+		<input type="reset" value="Clear Form"/>
+		<input type="submit" name="Submit" value="Send Form"/>
+
+	</form>
+	</div>
+</body>
+</html>
+<!-- might need to add a button for this
+<a class='return-btn' href='scholarship.html'>
+        Return to Form
+      	</a>"; -->
